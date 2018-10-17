@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
     <head>
+        <link rel="stylesheet" type="text/css" href="mobileui/style.css">
         <meta name="format-detection" content="telephone=no">
         <meta charset="utf-8">
         <meta name="msapplication-tap-highlight" content="no">
@@ -9,9 +10,40 @@
         <title>Apache Cordova</title>
     </head>
     <body>
+    <header>
+        <div class="header red">
+            <div class="right">
+                <button class="icon ion-navicon-round"></button>
+            </div>
+            <h1 class="align-center">RangoBot</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <div>
+                <ul class="lista">
+                    <li>Conectar</li>
+                    <li>Cadastrar</li>
+                    <li>Sair</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <footer>
+        <div class="footer red">            
+            <div class="texto">
+                <input type="text" class="campoTexto">
+            </div>
+            <div class="send">
+                <button class="buttonSend">Send!</button> 
+            </div>
+        </div>
+    </footer>
 
-      
-      <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
