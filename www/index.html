@@ -9,27 +9,66 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Apache Cordova</title>
     </head>
-    <body>
     <header>
         <div class="header red">
             <div class="right">
-                <button class="icon ion-navicon-round"></button>
+                <button class="icon ion-navicon-round" onclick="openMenu('myMenu')"></button>
             </div>
             <h1 class="align-center">RangoBot</h1>
         </div>
     </header>
     
-    <nav>
-        <div class="menu">
-            <div>
-                <ul class="lista">
-                    <li>Conectar</li>
-                    <li>Cadastrar</li>
-                    <li>Sair</li>
-                </ul>
+    <body class="padding grey-200">
+        <div class="menu white menu-right" id="myMenu">
+            <div class="list no-border">
+            <div class="item red">
+                <div class="left">
+                <img class="avatar circle" src="/img/Gabriel.jpeg">
+                </div>
+                <h1>Gabriel Gaspar</h1>
+                <p>gabriel@gmail.com.br</p>
+            </div>
+            <a class="item">
+                <div class="left">
+                <i class="icon ion-ios-list-outline"></i>
+                </div>
+                <h1>Histórico</h1>
+            </a>
+            <a class="item">
+                <div class="left">
+                <i class="icon ion-ios-chatbubble-outline"></i>
+                </div>
+                <h1>RangoBot Chat</h1>
+                <div class="right">
+                </div>
+            </a>
+            <a class="item">
+                <div class="left">
+                <i class="icon ion-ios-search"></i>
+                </div>
+                <h1>Buscar Mapa</h1>
+            </a>
+            <a onclick="closeMenu('myMenu')" class="item">
+                <div class="left">
+                <i class="icon ion-ios-close-outline"></i>
+                </div>
+                <h1>Fechar Menu</h1>
+            </a>
+            <a onclick="" class="item">
+                <div class="left">
+                <i class="icon ion-close"></i>
+                </div>
+                <h1>Sair</h1>
+            </a>
             </div>
         </div>
-    </nav>
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
     
     <footer>
         <div class="footer red">            
@@ -37,13 +76,10 @@
                 <input type="text" class="campoTexto">
             </div>
             <div class="send">
-                <button class="buttonSend">Send!</button> 
+                <button class="white circle icon ion-arrow-right-b"></button> 
             </div>
         </div>
     </footer>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="mobileui/mobileui.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+        
 </html>
