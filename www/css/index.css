@@ -20,6 +20,15 @@
     margin-left: 10px;
 }
 
+.label{
+    float: left;
+    margin-left: 10px;
+}
+
+.ajusteHeader{
+    margin-top: 40px;
+}
+
 .campoTexto{
     background-color: white;
     border-color: black;
